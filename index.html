@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HELLSTAR Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      padding: 20px 60px;
+    }
+
+    .nav-link {
+      font-weight: bold;
+      color: #000 !important;
+    }
+
+    .brand-logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .section-title {
+      padding: 40px 60px 10px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .shop-now {
+      text-align: right;
+      padding-right: 60px;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .shop-now a {
+      text-decoration: underline;
+      color: #000;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+      aspect-ratio: 3 / 4; /* maintains portrait aspect ratio */
+}
+
+
+    .sold-out {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .product-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      font-size: 14px;
+    }
+
+    .newsletter {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .footer-logo {
+      width: 50px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    .invert-logo {
+        filter: invert(100%);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header/Nav -->
+<header class="pt-5 pb-4 position-relative d-flex justify-content-between align-items-center px-5">
+    <div class="d-flex gap-3">
+        <a class="nav-link" href="#">STUDIOS</a>
+        <a class="nav-link" href="#">CAPSULE</a>
+        <a class="nav-link" href="#">SPORTS</a>
+    </div>
+
+  <!-- Centered logo absolutely positioned -->
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <img src="Hellstar_Logo.webp" alt="Logo" class="brand-logo" />
+     </div>
+
+    <div class="d-flex gap-3">
+        <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+        <a class="nav-link" href="#"><i class="bi bi-bag"></i></a>
+    </div>
+</header>
+
+  <!-- Title & Shop Now -->
+  <div class="section-title">STUDIOS</div>
+  <div class="shop-now"><a href="#">SHOP NOW</a></div>
+
+  <!-- Product Grid -->
+<section class="container py-5">
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product">
+        <img src="Artboard5_2.webp" alt="Product 1" />
+        <p class="product-title mb-0">Tribal Zip-up w/ Laser - $300.00</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product">
+        <img src="IMG-6880_2048x2048.jpg" alt="Product 2" />
+        <p class="product-title mb-0">Terry Carpenter Shorts w/ Laser - $250.00</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product">
+        <img src="Artboard4copy6_1_2048x2048.jpg" alt="Product 3" />
+        <p class="product-title mb-0">Ohm Zip-Up - $250.00</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product">
+        <img src="2C626321-FB7B-45CD-BA69-E4C54C0F43A3_2048x2048.jpg" alt="Product 4" />
+        <p class="product-title mb-0">Terry Carpenter Shorts w/ Laser - 250.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter">
+    <h2 class="mb-4">GET NOTIFIED OF DROPS</h2>
+    <form class="d-flex justify-content-center">
+      <input type="email" class="form-control w-auto rounded-start-pill px-4" placeholder="Your email" />
+      <button type="submit" class="btn btn-outline-dark rounded-end-pill px-4">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <img src="Hellstar_Logo.webp" alt="Footer Logo" class="footer-logo invert-logo" />
+    <div class="mb-3">
+      <a href="#" class="footer-links">Search</a>
+      <a href="#" class="footer-links">Privacy Policy</a>
+      <a href="#" class="footer-links">Refund Policy</a>
+      <a href="#" class="footer-links">Shipping Policy</a>
+      <a href="#" class="footer-links">Terms of Service</a>
+      <a href="#" class="footer-links">Contact Us</a>
+    </div>
+    <div class="footer-bottom">
+      🇺🇸 United States (USD $) &nbsp;&nbsp; | &nbsp;&nbsp; © 2025, HELLSTAR.
+    </div>
+  </footer>
+
+</body>
+</html>
